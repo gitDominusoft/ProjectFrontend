@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Banner */
+.banner {
+    background-image: linear-gradient(rgba(41, 39, 40, 0.692), rgba(41, 39, 40, 0.452)), url("../images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+}
+
+
+/* Elementet e navbar */
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.items ul li {
+    display: inline;
+}
+
+.items a {
+    color: #f0f8ff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    padding: 10px 40px;
+    margin-left: 50px;
+}
+
+/* Logo */
+#brand-logo {
+    font-size: 4rem;
+    font-style: italic;
+    color: #f0f8ff;
+}
+
+/* Butoni */
+a.button {
+    background-color: #f0c815;
+    color: #000;
+    border-radius: 20px;
+    border: 3px solid #f0c815;
+    cursor: pointer;
+}
+
+a.button:hover {
+    background-color: transparent;
+    color: #f0f8ff;
+    border: 3px solid #f0c815;
+}
+
+/* Nav ikon responsiv */
+nav .fa-grip-lines {
+    font-size: 3em;
+    color: #f0f8ff;
+    display: none;
+}
+
+/* Text mbi foto */
+.banner h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 4rem;
+    color: #f0f8ff;
+}
+
+.banner span {
+    display: block;
+    font-size: 9rem;
+}
+
+/* Layout cards */
+.destinations,
+.blogs,
+.packages {
+    width: 90%;
+    margin: 50px auto;
+
+}
+
+.destinations>h1,
+.blogs>h1,
+.packages>h1 {
+    text-align: center;
+    margin: 50px 0;
+    letter-spacing: 0.5em;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #005561;
+}
+
+.bigBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#destinations,
+#packages,
+#blogs {
+    padding-top: 100px;
+}
+
+/* Card Destination */
+
+.card-info {
+    width: 49%;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.card-info img {
+    width: 40%;
+    object-fit: cover;
+    background-size: center center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-info div {
+    color: #f0f8ff;
+    background-color: #005561;
+    width: 80%;
+    padding: 5%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-info a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.card-info p {
+    margin: 15px 0;
+
+}
+
+/* Heart Position */
+.card-info {
+    position: relative;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 2em;
+    color: #9b1919;
+
+}
+
+/* Packages Card */
+.packages div {
+    text-align: center;
+}
+
+.packages div>i {
+    color: #005561;
+}
+
+.card-package {
+    color: #005561;
+}
+
+.card-package ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.card-package ul li {
+    padding-top: 30px;
+}
+
+.card-package i.fa-earth-americas {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.price {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.card-package ul li i {
+    font-size: 1.5em;
+}
+
+.card-package,
+.card-blog {
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+}
+
+/* Blog Card */
+.card-blog img {
+    width: 100%;
+    height: 30ppx;
+
+}
+
+.card-blog h1 {
+    color: #005561;
+}
+
+.card-blog p {
+    margin: 20px 0;
+}
+
+.card-blog button {
+    background-color: #005561;
+    color: #fff;
+    padding: 10px 20px;
+    border: #005561 2px solid;
+    border-radius: 20px;
+}
+
+.card-blog button:hover {
+    background-color: transparent;
+    color: #005561;
+}
+
+.hiddenParagraph {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #005561;
+    padding: 5% 3rem;
+    color: #f0f8ff;
+}
+
+footer .logo {
+    width: 30%;
+}
+
+footer .usefulLinks {
+    width: 19%
+}
+
+footer .subscribe {
+    width: 40%;
+}
+
+footer .copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+footer .subscribe h2 {
+    padding-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 3%;
+}
+
+footer ul li {
+    list-style: '>';
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+form input {
+    display: block;
+    border: none;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+input[type="email"] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+input[type="text"] {
+    padding-bottom: 20px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input[type="submit"] {
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #aec7dd;
+    font-size: 1.5em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+/* Responsiviteti */
+@media screen and (max-width:1100px) {
+
+    /* Navbar */
+    nav ul {
+        display: none;
+    }
+
+    nav .fa-grip-lines {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Banner text */
+    .banner h1 {
+        font-size: 6rem;
+        top: 35%;
+        left: 25%;
+    }
+
+    .banner span {
+        font-size: 7rem;
+    }
+
+    #navItems {
+        width: 100%;
+        position: absolute;
+        top: 80%;
+        left: 0%;
+        background-color: #005561
+    }
+
+    #navItems li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    #brand-logo {
+        padding-left: 0;
+        margin-left: -8px;
+    }
+
+    .items a {
+        margin-left: 10px;
+    }
+
+    /* Tituj */
+    .destinations>h1,
+    .blogs>h1,
+    .packages>h1 {
+        letter-spacing: 0.5em;
+        font-size: 4rem;
+
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+
+    /* Banner text */
+    .banner h1 {
+        font-size: 4rem;
+        top: 35%;
+        left: 25%;
+    }
+
+    .banner span {
+        font-size: 5rem;
+    }
+
+    #brand-logo {
+        padding-left: 0;
+    }
+
+    /* Tituj */
+    .destinations>h1,
+    .blogs>h1,
+    .packages>h1 {
+        letter-spacing: 0.2em;
+        font-size: 3rem;
+
+    }
+
+    /* Layout */
+    .card-info,
+    footer {
+        flex-direction: column;
+    }
+
+    .card-package,
+    .card-blog,
+    .card-info,
+    footer .logo,
+    footer .usefulLinks,
+    footer .subscribe {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    footer .logo,
+    footer .usefulLinks,
+    footer .subscribe {
+        margin-bottom: 20px;
+    }
+
+    .card-info img,
+    .card-info div {
+        width: 100%;
+        border-radius: 0;
+    }
+
+}
